@@ -3,60 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prises de notes - Histoire SPD - USMB</title>
+    <title>Connexion – Cours USMB SPD</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Prises de notes – Histoire Science Po-Droit - Université Savoie Mont-Blanc</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#cours">Cours</a></li>
-                <li><a href="#ressources">Ressources</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="login-container">
+        <h1>Connexion</h1>
 
-    <main>
-        <section id="intro">
-            <h2>Bienvenue</h2>
-            <p>
-                Ce site regroupe mes prises de notes pour les cours de la formation d'<strong>Histoire Science Po-Droit</strong>.  Il est conçu pour offrir un accès simple, clair et efficace aux contenus. Certaines options ne sont pas disponibles ici.
-            </p>
-        </section>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Mot de passe">
 
-        <section id="cours">
-            <h2>Cours</h2>
-            <p>Première année</p>
-            <p>Semestre 1</p>
-            <ul class="liste-cours">
-                <li><a href=l1/s1/histcontempo1.html>UAF 101 - Fondamentaux Contemporaine 1</a></li>
-                <li>UAF 102 - Appronfondissement Contemporaine 1 - Prépa IEP</li>
-                <li>UAF 103 - Sciences Politiques 1</li>
-                <li><a href=l1/s1/histmoderne1.html>UAI 104 - Individualisaiton au choix - Fondamentaux Histoire Moderne 1</a></li>
-                <li>UAM 105 - Modulaire (Méthodologie du Travail Universitaire ; Anglais : prépa à l'Épreuve du Concours ; Langue Vivante 2 - Italien B2)</li>
-            </ul>
-            <p>Semestre 2</p>
-            <ul class="liste-cours">
-                <li><a href=l1/s2/histmedievale1.html>UAF 201 - Fondamentaux médiévale 1</a></li>
-                <li>UAF 202 - Appronfondissement Contemporaine 2 - Prépa IEP</li>
-                <li>UAF 203 - Sciences Politiques 2</li>
-                <li>UAI 203 - Individualisation au choix - Fondamentaux Histoire Ancienne 1</li>
-                <li>UAM 205 - Modulaire (Culture et Usage du Numérique ; Anglais : prépa à l'Épreuve du Concours ; Langue Vivante 2 - Italien B2)</li>
-            </ul>
-        </section>
+        <button id="login-btn">Se connecter</button>
 
-        <section id="ressources">
-            <h2>Ressources</h2>
-            <p>Voir Moodle</p>
-        </section>
+        <p id="error-message"></p>
+    </main>
 
-    <footer>
-        <p>© 2026 – Cours USMB Histoire SPD</p>
-    </footer>
-
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
