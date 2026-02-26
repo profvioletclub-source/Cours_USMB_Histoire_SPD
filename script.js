@@ -45,7 +45,7 @@ auth.onAuthStateChanged(user => {
     if (!user && !isLoginPage) {
         // Chemin complet sans le premier slash
         const currentPage = window.location.pathname.substring(1);
-        window.location.href = "index.html?redirect=" + currentPage;
+        window.location.href = "/index.html?redirect=" + currentPage;
     }
 });
 
