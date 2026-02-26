@@ -27,9 +27,9 @@ if (document.getElementById("login-btn")) {
             .then(() => {
                 const redirect = getQueryParam("redirect");
                 if (redirect) {
-                    window.location.href = redirect;
+                    window.location.href = "/Cours_USMB_Histoire_SPD/" + redirect;
                 } else {
-                    window.location.href = "accueil.html";
+                    window.location.href = "/Cours_USMB_Histoire_SPD/accueil.html";
                 }
             })
             .catch(error => {
@@ -43,9 +43,8 @@ auth.onAuthStateChanged(user => {
     const isLoginPage = window.location.pathname.endsWith("index.html");
 
     if (!user && !isLoginPage) {
-        // Chemin complet sans le premier slash
-        const currentPage = window.location.pathname.substring(1);
-        window.location.href = "/index.html?redirect=" + currentPage;
+        const currentPage = window.location.pathname.replace("/Cours_USMB_Histoire_SPD/", "");
+        window.location.href = "/Cours_USMB_Histoire_SPD/index.html?redirect=" + currentPage;
     }
 });
 
@@ -53,7 +52,7 @@ auth.onAuthStateChanged(user => {
 if (document.getElementById("logout-btn")) {
     document.getElementById("logout-btn").addEventListener("click", () => {
         auth.signOut().then(() => {
-            window.location.href = "index.html";
+            window.location.href = "/Cours_USMB_Histoire_SPD/index.html";
         });
     });
 }
