@@ -73,3 +73,23 @@ footer {
     background: #ddd;
     margin-top: 40px;
 }
+
+.login-container {
+    max-width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.logout {
+    background: #aa0000;
+    margin-left: 20px;
+}
