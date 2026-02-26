@@ -40,10 +40,11 @@ if (document.getElementById("login-btn")) {
 
 // --- PROTECTION DES PAGES ---
 auth.onAuthStateChanged(user => {
-    const isLoginPage = window.location.pathname.includes("index.html");
+    const isLoginPage = window.location.pathname.endsWith("index.html");
 
     if (!user && !isLoginPage) {
-        const currentPage = window.location.pathname.replace("/", "");
+        // Chemin complet sans le premier slash
+        const currentPage = window.location.pathname.substring(1);
         window.location.href = "index.html?redirect=" + currentPage;
     }
 });
