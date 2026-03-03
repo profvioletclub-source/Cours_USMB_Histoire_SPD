@@ -93,3 +93,33 @@ input {
     background: #aa0000;
     margin-left: 20px;
 }
+
+
+/* Conteneur déroulant */
+.dropdown {
+    margin-bottom: 10px;
+}
+
+/* Titre cliquable */
+.dropdown-title {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+/* Contenu caché par défaut */
+.dropdown-content {
+    display: none;
+    margin-left: 20px;
+}
+
+/* Style des liens */
+.dropdown-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Espacement des éléments */
+.dropdown-content li {
+    margin: 4px 0;
+}
