@@ -182,3 +182,22 @@ body.login-page {
     color: #aa0000;
     font-weight: bold;
 }
+
+/* --- LIENS SANS STYLE PAR DÉFAUT --- */
+a {
+    color: inherit;          /* même couleur que le texte autour */
+    text-decoration: none;   /* enlève le soulignement */
+}
+
+a:visited {
+    color: inherit;          /* évite le violet après clic */
+}
+
+a:hover {
+    text-decoration: underline; /* optionnel : petit soulignement au survol */
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
