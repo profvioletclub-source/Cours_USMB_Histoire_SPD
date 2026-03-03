@@ -1,7 +1,7 @@
 {
   "name": "Notes Cours SPD",
   "short_name": "Notes Cours SPD",
-  "start_url": "index.html",
+  "start_url": "accueil.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2b2b2b",
